@@ -16,15 +16,14 @@ export default class extends AbstractView {
 
         const data = await getData('/static/data/posts.json')
 
-        let listPosts = "<ul>"
-        for(let i in data) {
-            listPosts +=`<li><a href="/post-view/${data[i]['id']}" data-link>${data[i]['title']}</a></li>`
-        }
-        listPosts +="</ul>"
-            
+        const post_id = Number(this.params.id)
+
+        const post = data.find(item => item.id === post_id)
+        
         return `
-        <h1>Posts</h1>
-        ${listPosts}
+        <h1>${post.title}</h1>
+        <p>${post.descr}</p>
+        <a href="/posts" data-link>Retour</a>
         `
     }
 }

@@ -1,7 +1,8 @@
 export default class {
 
-        constructor() {
-    
+        constructor(params) {
+            this.params = params
+           // console.log(this.params.id)
         }
 
         setTitle(title){
