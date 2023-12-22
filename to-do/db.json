@@ -10,7 +10,7 @@
       "id": 2,
       "text": "Exercise for 30 minutes",
       "day": "2023-12-19 08:15:00",
-      "reminder": false
+      "reminder": true
     },
     {
       "id": 3,
