@@ -18,7 +18,7 @@
     {
         "id": 3,
         "name": "Smart Watch",
-        "photo": "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+        "photo": "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
         "price": 249.97,
         "description": "Advanced smartwatch with fitness tracking, heart rate monitoring, and smart notifications.",
         "type": "Electronics"
@@ -26,7 +26,7 @@
     {
         "id": 4,
         "name": "Plant Shelves",
-        "photo": "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+        "photo": "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
         "price": 249.97,
         "description": "Stylish and functional plant shelves for displaying your favorite plants at home.",
         "type": "Home Decor"

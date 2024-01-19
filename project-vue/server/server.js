@@ -4,7 +4,7 @@ const cors = require('cors')
 const app = express()
 
 const corsOption = {
-    origin: "http://localhost:8081"
+    origin: "http://localhost:8082"
 }
 app.use(cors(corsOption))
 
@@ -18,7 +18,9 @@ app.use(bodyParser.urlencoded({extended:true}))
 const db = require('./app/models')
 db.connex.sync()
 
-const PORT = 8080
+require('./app/routes/product.route')(app)
+
+const PORT = 3000
 app.listen(PORT, ()=>{
     console.log(`Server is running on port ${PORT}`)
 })
