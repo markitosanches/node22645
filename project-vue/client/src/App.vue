@@ -29,6 +29,10 @@
     <router-view
     :inventory="inventory"
     :add="addToCart"
+    :addInv="addInventory"
+    :updateInv="updateInventory"
+    :removeInv="removeInventory"
+    :remove="removeItem"
     />
     <MainFooter/>
     <SideBar
@@ -75,6 +79,19 @@ export default {
     },
     removeItem (name) {
       delete this.cart[name]
+    },
+    addInventory (product) {
+      this.inventory.push(product)
+    },
+    updateInventory (index, data) {
+      this.inventory[index].name = data.name
+      this.inventory[index].photo = data.photo
+      this.inventory[index].price = data.price
+      this.inventory[index].description = data.description
+      this.inventory[index].type = data.type
+    },
+    removeInventory (index) {
+      this.inventory.splice(index, 1)
     }
   },
   computed: {
